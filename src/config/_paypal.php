@@ -3,6 +3,11 @@ return [
     'components' => [
         'paypal' => [
             'class'  => 'tmukherjee13\paypal\Payment',
+            'method' => \tmukherjee13\paypal\Payment::METHOD_CHAINED,
+            'cancelUrl' => 'http://yii.loc/paypal/cancel',
+            'returnUrl' => 'http://yii.loc/paypal/success',
+            'actionType' => \tmukherjee13\paypal\Payment::ACTION_PAY,
+            'currency' => 'USD',
             'config' => [
                 "mode"            => "sandbox",
                 "acct1.UserName"  => "suvojit.seal.bus.gbp_api1.gmail.com",
