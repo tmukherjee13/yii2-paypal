@@ -9,7 +9,10 @@
         "email": "tmukherjee13@gmail.com"
     }],
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "yiisoft/yii2": "~2.0.0",
+        "paypal/rest-api-sdk-php": "*",
+        "paypal/adaptivepayments-sdk-php": "^3.9",
+        "paypal/merchant-sdk-php": "*"
     },
     "autoload": {
         "psr-4": {
@@ -17,6 +20,6 @@
         }
     },
     "extra": {
-        "bootstrap": "tmukherjee13\\paypal\\PaymenetBootstrap"
+        "bootstrap": "tmukherjee13\\paypal\\PaymentBootstrap"
     }
 }
